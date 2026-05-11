@@ -17,6 +17,6 @@ async def add_motivation_handler(message: Message):
 
     if ADMIN_ID == message.from_user.id:
         await add_motivation(message.text.split(":")[1].strip())
-        await message.answer(text="Motivation added!")
+        await message.answer(text="Hikmatli so'z qo'shildi.")
     else:
-        await message.answer(text="Error")
+        await message.answer(text="Siz admin emassiz!")

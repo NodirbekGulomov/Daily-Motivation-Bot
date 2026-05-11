@@ -13,4 +13,4 @@ async def start_handler(message: Message) -> None:
         return
 
     await add_user(message.from_user.id)
-    await message.answer(f"Hello!")
+    await message.answer("Sizga har kuni 09:00da random hikmatli soz yuboriladi.")
